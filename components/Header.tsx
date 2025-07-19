@@ -1,10 +1,33 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const lastScrollY = useRef(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY < 0) return; // ignore negative scroll
+
+    if (currentScrollY <= 0) {
+      setIsVisible(true);
+    } else if (currentScrollY > lastScrollY.current) {
+      // scrolling down
+      setIsVisible(false);
+    } else if (currentScrollY < lastScrollY.current) {
+      // scrolling up
+      setIsVisible(true);
+    }
+    lastScrollY.current = currentScrollY;
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navItems = [
     { name: 'Home', href: '/' },
@@ -17,13 +40,17 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-gray-800">
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-gray-800 transition-transform duration-300 ${
+        isVisible ? 'translate-y-0' : '-translate-y-full'
+      }`}
+    >
       <nav className="px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-white font-pacifico">
             logo
           </Link>
-          
+
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <Link
