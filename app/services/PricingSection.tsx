@@ -1,11 +1,14 @@
 
 'use client';
 
+import { useState } from 'react';
+import PlanApplicationModal from './PlanApplicationModal';
+
 export default function PricingSection() {
   const plans = [
     {
       name: 'Starter',
-      price: '$999',
+      price: '₱999',
       period: '/month',
       description: 'Perfect for small businesses getting started',
       features: [
@@ -20,7 +23,7 @@ export default function PricingSection() {
     },
     {
       name: 'Professional',
-      price: '$2,499',
+      price: '₱2,499',
       period: '/month',
       description: 'Ideal for growing businesses',
       features: [
@@ -36,7 +39,7 @@ export default function PricingSection() {
     },
     {
       name: 'Enterprise',
-      price: '$4,999',
+      price: '₱4,999',
       period: '/month',
       description: 'Complete solution for large businesses',
       features: [
@@ -52,6 +55,19 @@ export default function PricingSection() {
       color: 'from-purple-600 to-pink-600'
     }
   ];
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
+
+  const openModal = (planName: string) => {
+    setSelectedPlan(planName);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setSelectedPlan(null);
+    setIsModalOpen(false);
+  };
 
   return (
     <section className="py-20 px-6">
@@ -103,17 +119,27 @@ export default function PricingSection() {
                 ))}
               </ul>
 
-              <button className={`w-full py-4 ${
-                plan.popular
-                  ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
-                  : 'border-2 border-gray-600 text-gray-300 hover:border-gray-500'
-              } font-semibold rounded-full transition-all duration-300 whitespace-nowrap cursor-pointer`}>
+              <button
+                onClick={() => openModal(plan.name)}
+                className={`w-full py-4 ${
+                  plan.popular
+                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
+                    : 'border-2 border-gray-600 text-gray-300 hover:border-gray-500'
+                } font-semibold rounded-full transition-all duration-300 whitespace-nowrap cursor-pointer`}
+              >
                 Get Started
               </button>
             </div>
           ))}
         </div>
       </div>
+
+      <PlanApplicationModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        selectedPlan={selectedPlan}
+        plans={plans}
+      />
     </section>
   );
 }
