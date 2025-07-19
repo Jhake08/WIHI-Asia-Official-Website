@@ -11,7 +11,9 @@ export default function CompanyStory() {
               Building Digital <span className="text-blue-400">Excellence</span>
             </h2>
             <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-              Founded in 2020, we started with a simple vision: to help businesses thrive in the digital marketplace. What began as a small team of passionate developers and marketers has grown into a leading ecommerce solutions provider.
+              The company started as a part-time venture, driven by the need to find a livelihood to
+              support the CEO and their family. They were searching for a source of income that would uplift
+              their lives, increase their earnings, and provide for their family
             </p>
             <p className="text-gray-300 text-lg mb-8 leading-relaxed">
               Today, we manage over 500+ successful stores across Facebook, TikTok, Shopee, and Lazada, generating millions in revenue for our clients. Our data-driven approach and innovative strategies have made us the preferred partner for businesses looking to scale their online presence.
