@@ -4,10 +4,12 @@
 import { useState } from 'react';
 import OurMissionModal from './OurMissionModal';
 import CompanyTimelineModal from './CompanyTimelineModal';
+import OurVisionModal from './OurVisionModal';
 
 export default function AboutHero() {
   const [isOurMissionOpen, setIsOurMissionOpen] = useState(false);
   const [isCompanyTimelineOpen, setIsCompanyTimelineOpen] = useState(false);
+  const [isOurVisionOpen, setIsOurVisionOpen] = useState(false);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -40,11 +42,18 @@ export default function AboutHero() {
           >
             Company Timeline
           </button>
+          <button
+            onClick={() => setIsOurVisionOpen(true)}
+            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm"
+          >
+            Our Vision
+          </button>
         </div>
       </div>
 
       <OurMissionModal isOpen={isOurMissionOpen} onClose={() => setIsOurMissionOpen(false)} />
       <CompanyTimelineModal isOpen={isCompanyTimelineOpen} onClose={() => setIsCompanyTimelineOpen(false)} />
+      <OurVisionModal isOpen={isOurVisionOpen} onClose={() => setIsOurVisionOpen(false)} />
     </section>
   );
 }
