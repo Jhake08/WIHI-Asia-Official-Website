@@ -8,15 +8,18 @@ export default function CompanyStory() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Building Digital <span className="text-blue-400">Excellence</span>
+             <span className="text-blue-400">Award-Winning Excellence</span> in Ecommerce Solutions
             </h2>
             <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-              The company started as a part-time venture, driven by the need to find a livelihood to
-              support the CEO and their family. They were searching for a source of income that would uplift
-              their lives, increase their earnings, and provide for their family
+              Recognized as an Outstanding Beauty E-Commerce Business by ASEAN and the leading men’s skincare brand on TikTok, our company has earned accolades across multiple platforms.
+              But beyond the awards, our greatest achievement is the trust and positive feedback from our customers. 
+              The real success lies in how our products have transformed lives — a testament to the meaningful impact of our brand.
             </p>
             <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-              Today, we manage over 500+ successful stores across Facebook, TikTok, Shopee, and Lazada, generating millions in revenue for our clients. Our data-driven approach and innovative strategies have made us the preferred partner for businesses looking to scale their online presence.
+              A Breakthrough in Skincare Success
+              In 2023, the company launched Cosmi Beautii, which quickly rose to become a top-performing brand on TikTok. 
+              Its niacinamide soap reached an outstanding milestone of 20,000 orders per day, marking a major breakthrough in the industry. 
+              Since then, the brand has continued to grow and gain loyal followers nationwide.
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
@@ -24,7 +27,7 @@ export default function CompanyStory() {
                 <div className="text-gray-300">Active Stores</div>
               </div>
               <div className="text-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
-                <div className="text-3xl font-bold text-purple-400 mb-2">$50M+</div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">₱50M+</div>
                 <div className="text-gray-300">Revenue Generated</div>
               </div>
             </div>
