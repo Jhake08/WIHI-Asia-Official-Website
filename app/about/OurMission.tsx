@@ -7,9 +7,9 @@ export default function OurMission() {
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
           Our <span className="text-blue-400">Mission</span>
         </h2>
-        <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-          Our mission is to empower businesses to thrive in the digital marketplace by providing innovative ecommerce solutions and unparalleled support.
-        </p>
+        <li><strong>2020:</strong>The company began as a part-time venture, driven by CEO Mr. Jan Lester Julian and COO Mrs. Jellete Julian, with the goal of building a better future for their family through stable income and opportunity. 
+          As the owners of the company, they achieved a major breakthrough in 2023 with the launch of Cosmi Beautii
+          which became a top TikTok brand—reaching 20,000 daily orders for its niacinamide soap and continuing to grow ever since.</li>
       </div>
     </section>
   );

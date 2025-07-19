@@ -47,12 +47,12 @@ export default function CompanyTimelineModal({ isOpen, onClose }: CompanyTimelin
         >
           &times;
         </button>
-        <h2 className="text-3xl font-bold mb-4">Company Timeline</h2>
+        <h2 className="text-3xl font-bold mb-4">Company History</h2>
         <ul className="text-lg leading-relaxed list-disc list-inside space-y-2">
-          <li><strong>2020:</strong> Founded with a vision to revolutionize ecommerce.</li>
-          <li><strong>2021:</strong> Expanded services to multiple platforms including Facebook and TikTok.</li>
-          <li><strong>2022:</strong> Achieved 500+ active stores and $50M+ revenue generated.</li>
-          <li><strong>2023:</strong> Launched new data-driven marketing strategies and technology solutions.</li>
+          <li><strong>2020:</strong>The company began as a part-time venture, driven by CEO Mr. Jan Lester Julian and COO Mrs. Jellete Julian, with the goal of building a better future for their family through stable income and opportunity. 
+          As the owners of the company, they achieved a major breakthrough in 2023 with the launch of Cosmi Beautii
+          which became a top TikTok brand—reaching 20,000 daily orders for its niacinamide soap and continuing to grow ever since.</li>
+
         </ul>
       </div>
       <style jsx>{`
