@@ -1,0 +1,64 @@
+'use client';
+
+import Link from 'next/link';
+import { useState } from 'react';
+
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navItems = [
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Team', href: '/team' },
+    { name: 'Careers', href: '/careers' },
+    { name: 'Contact', href: '/contact' },
+  ];
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-md border-b border-gray-800">
+      <nav className="px-6 py-4">
+        <div className="flex items-center justify-between">
+          <Link href="/" className="text-2xl font-bold text-white font-pacifico">
+            logo
+          </Link>
+          
+          <div className="hidden lg:flex items-center space-x-8">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-gray-300 hover:text-white transition-all duration-300 hover:scale-105 whitespace-nowrap cursor-pointer"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="lg:hidden text-white w-6 h-6 flex items-center justify-center cursor-pointer"
+          >
+            <i className={`ri-${isMenuOpen ? 'close' : 'menu'}-line text-xl`}></i>
+          </button>
+        </div>
+
+        {isMenuOpen && (
+          <div className="lg:hidden mt-4 py-4 border-t border-gray-800">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="block py-2 text-gray-300 hover:text-white transition-colors cursor-pointer"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+        )}
+      </nav>
+    </header>
+  );
+}
