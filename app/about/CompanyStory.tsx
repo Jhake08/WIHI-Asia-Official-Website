@@ -15,12 +15,6 @@ export default function CompanyStory() {
               But beyond the awards, our greatest achievement is the trust and positive feedback from our customers. 
               The real success lies in how our products have transformed lives — a testament to the meaningful impact of our brand.
             </p>
-            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-              A Breakthrough in Skincare Success
-              In 2023, the company launched Cosmi Beautii, which quickly rose to become a top-performing brand on TikTok. 
-              Its niacinamide soap reached an outstanding milestone of 20,000 orders per day, marking a major breakthrough in the industry. 
-              Since then, the brand has continued to grow and gain loyal followers nationwide.
-            </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-4 bg-gray-800/50 rounded-lg backdrop-blur-sm">
                 <div className="text-3xl font-bold text-blue-400 mb-2">500+</div>
