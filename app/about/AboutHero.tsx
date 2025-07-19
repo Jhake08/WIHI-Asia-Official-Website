@@ -40,7 +40,7 @@ export default function AboutHero() {
             onClick={() => setIsCompanyTimelineOpen(true)}
             className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm"
           >
-            Company Timeline
+            Company History
           </button>
           <button
             onClick={() => setIsOurVisionOpen(true)}
