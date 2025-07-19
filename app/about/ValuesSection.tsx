@@ -4,24 +4,29 @@
 export default function ValuesSection() {
   const values = [
     {
-      icon: 'ri-lightbulb-line',
-      title: 'Innovation',
-      description: 'We constantly push boundaries and embrace new technologies to deliver cutting-edge solutions for our clients.'
+      icon: 'ri-shield-line',
+      title: 'Courage',
+      description: 'We face challenges head-on and take bold steps to achieve our goals with confidence.'
     },
     {
-      icon: 'ri-team-line',
-      title: 'Collaboration',
-      description: 'We believe in the power of teamwork and work closely with our clients to achieve exceptional results.'
+      icon: 'ri-book-line',
+      title: 'Wisdom',
+      description: 'We apply knowledge and experience thoughtfully to make sound decisions and guide our actions.'
     },
     {
-      icon: 'ri-shield-check-line',
-      title: 'Integrity',
-      description: 'Transparency and honesty are at the core of everything we do. We build trust through reliable partnerships.'
+      icon: 'ri-checkbox-circle-line',
+      title: 'Accountability',
+      description: 'We take responsibility for our actions and commitments, ensuring transparency and reliability.'
     },
     {
-      icon: 'ri-trophy-line',
-      title: 'Excellence',
-      description: 'We strive for perfection in every project, ensuring our clients receive the highest quality service.'
+      icon: 'ri-heart-line',
+      title: 'Genuine',
+      description: 'We build authentic relationships based on honesty, empathy, and respect.'
+    },
+    {
+      icon: 'ri-group-line',
+      title: 'Unity',
+      description: 'We foster a collaborative environment where everyone works together towards shared success.'
     }
   ];
 
@@ -37,7 +42,7 @@ export default function ValuesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {values.map((value, index) => (
             <div
               key={index}
