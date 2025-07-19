@@ -1,13 +1,13 @@
 
 'use client';
 
+import { useState } from 'react';
+import OurMissionModal from './OurMissionModal';
+import CompanyTimelineModal from './CompanyTimelineModal';
+
 export default function AboutHero() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  const [isOurMissionOpen, setIsOurMissionOpen] = useState(false);
+  const [isCompanyTimelineOpen, setIsCompanyTimelineOpen] = useState(false);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -29,19 +29,22 @@ export default function AboutHero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            onClick={() => scrollToSection('our-mission')}
+            onClick={() => setIsOurMissionOpen(true)}
             className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm"
           >
             Our Mission
           </button>
           <button
-            onClick={() => scrollToSection('company-timeline')}
+            onClick={() => setIsCompanyTimelineOpen(true)}
             className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm"
           >
             Company Timeline
           </button>
         </div>
       </div>
+
+      <OurMissionModal isOpen={isOurMissionOpen} onClose={() => setIsOurMissionOpen(false)} />
+      <CompanyTimelineModal isOpen={isCompanyTimelineOpen} onClose={() => setIsCompanyTimelineOpen(false)} />
     </section>
   );
 }
