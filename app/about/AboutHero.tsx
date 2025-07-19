@@ -2,6 +2,13 @@
 'use client';
 
 export default function AboutHero() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
@@ -21,10 +28,16 @@ export default function AboutHero() {
           Pioneering ecommerce excellence across multiple platforms since 2020. We transform brands into digital powerhouses through innovative strategies and cutting-edge technology.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm">
+          <button
+            onClick={() => scrollToSection('our-mission')}
+            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm"
+          >
             Our Mission
           </button>
-          <button className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm">
+          <button
+            onClick={() => scrollToSection('company-timeline')}
+            className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm"
+          >
             Company Timeline
           </button>
         </div>
