@@ -34,8 +34,11 @@ export default function OurMissionModal({ isOpen, onClose }: OurMissionModalProp
       onClick={onClose}
     >
       <div
-        className="bg-gray-900 bg-opacity-90 rounded-lg p-8 max-w-3xl w-full text-white relative"
+        className="bg-gray-900 bg-opacity-90 rounded-lg p-8 max-w-3xl w-full text-white relative transform transition-transform duration-300 ease-out scale-95 opacity-0"
         onClick={(e) => e.stopPropagation()}
+        style={{
+          animation: isOpen ? 'modalFadeIn 0.3s forwards' : 'modalFadeOut 0.3s forwards',
+        }}
       >
         <button
           className="absolute top-4 right-4 text-white text-2xl font-bold hover:text-gray-400"
@@ -49,6 +52,28 @@ export default function OurMissionModal({ isOpen, onClose }: OurMissionModalProp
           Our mission is to empower businesses to thrive in the digital marketplace by providing innovative ecommerce solutions and unparalleled support.
         </p>
       </div>
+      <style jsx>{`
+        @keyframes modalFadeIn {
+          from {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+        @keyframes modalFadeOut {
+          from {
+            opacity: 1;
+            transform: scale(1);
+          }
+          to {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+        }
+      `}</style>
     </div>
   );
 }
