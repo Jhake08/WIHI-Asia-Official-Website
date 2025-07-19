@@ -49,7 +49,8 @@ export default function OurMissionModal({ isOpen, onClose }: OurMissionModalProp
         </button>
         <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
         <p className="text-lg leading-relaxed">
-          Our mission is to empower businesses to thrive in the digital marketplace by providing innovative ecommerce solutions and unparalleled support.
+          The company’s vision is to create practical, high-quality products that make everyday life easier for customers. 
+          They strive to be a brand that delivers real value and convenience in every home.
         </p>
       </div>
       <style jsx>{`

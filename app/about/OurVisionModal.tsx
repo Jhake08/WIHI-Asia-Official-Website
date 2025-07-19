@@ -49,7 +49,8 @@ export default function OurVisionModal({ isOpen, onClose }: OurVisionModalProps)
         </button>
         <h2 className="text-3xl font-bold mb-4">Our Vision</h2>
         <p className="text-lg leading-relaxed">
-          Our vision is to be the leading force in ecommerce innovation, driving growth and success for businesses worldwide through cutting-edge technology and dedicated partnership.
+          The company’s vision is to establish WIHI Asia Marketing Inc. as the top-of-mind brand in both skincare and household categories nationwide. 
+          With a vision for global recognition, they aim to lead every market they enter and make WIHI Asia Marketing Inc. a trusted name around the world.
         </p>
       </div>
       <style jsx>{`
