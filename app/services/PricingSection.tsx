@@ -9,7 +9,16 @@ export default function PricingSection() {
       name: 'Facebook',
       price: '',
       period: '',
-      description: 'Comprehensive Facebook Shop setup, Instagram Shopping integration, Ads management, and performance analytics.',
+      description: (
+        <>
+          <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
+            <li>Comprehensive Facebook Shop setup</li>
+            <li>Instagram Shopping integration</li>
+            <li>Ads management</li>
+            <li>Performance analytics</li>
+          </ul>
+        </>
+      ),
       features: [],
       popular: false,
       color: 'from-blue-600 to-blue-800'
@@ -18,7 +27,16 @@ export default function PricingSection() {
       name: 'TikTok',
       price: '',
       period: '',
-      description: 'TikTok Shop creation, live shopping events, influencer partnerships, and optimized ad campaigns.',
+      description: (
+        <>
+          <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
+            <li>TikTok Shop creation</li>
+            <li>Live shopping events</li>
+            <li>Influencer partnerships</li>
+            <li>Optimized ad campaigns</li>
+          </ul>
+        </>
+      ),
       features: [],
       popular: true,
       color: 'from-pink-600 to-purple-800'
@@ -27,7 +45,17 @@ export default function PricingSection() {
       name: 'Lazada',
       price: '',
       period: '',
-      description: 'Lazada store optimization, product photography, sponsored solutions, cross-border trade support, and logistics.',
+      description: (
+        <>
+          <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
+            <li>Lazada store optimization</li>
+            <li>Product photography</li>
+            <li>Sponsored solutions</li>
+            <li>Cross-border trade support</li>
+            <li>Logistics</li>
+          </ul>
+        </>
+      ),
       features: [],
       popular: false,
       color: 'from-blue-600 to-purple-800'
@@ -36,7 +64,17 @@ export default function PricingSection() {
       name: 'Shopee',
       price: '',
       period: '',
-      description: 'Shopee store setup, product listing optimization, ad campaign management, inventory, and customer service.',
+      description: (
+        <>
+          <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
+            <li>Shopee store setup</li>
+            <li>Product listing optimization</li>
+            <li>Ad campaign management</li>
+            <li>Inventory management</li>
+            <li>Customer service</li>
+          </ul>
+        </>
+      ),
       features: [],
       popular: false,
       color: 'from-orange-600 to-red-800'
@@ -89,7 +127,7 @@ export default function PricingSection() {
 
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
-                <p className="text-gray-300 text-sm mb-6">{plan.description}</p>
+                <div className="text-gray-300 text-sm mb-6">{plan.description}</div>
                 <div className="flex items-baseline justify-center mb-6">
                   <span className="text-4xl font-bold text-white">{plan.price}</span>
                   <span className="text-gray-400 ml-1">{plan.period}</span>
