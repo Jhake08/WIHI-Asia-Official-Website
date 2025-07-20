@@ -9,7 +9,7 @@ export default function PricingSection() {
       name: 'Facebook',
       price: '',
       period: '',
-      description: '',
+      description: 'Comprehensive Facebook Shop setup, Instagram Shopping integration, Ads management, and performance analytics.',
       features: [],
       popular: false,
       color: 'from-blue-600 to-blue-800'
@@ -18,7 +18,7 @@ export default function PricingSection() {
       name: 'TikTok',
       price: '',
       period: '',
-      description: '',
+      description: 'TikTok Shop creation, live shopping events, influencer partnerships, and optimized ad campaigns.',
       features: [],
       popular: true,
       color: 'from-pink-600 to-purple-800'
@@ -27,7 +27,7 @@ export default function PricingSection() {
       name: 'Lazada',
       price: '',
       period: '',
-      description: '',
+      description: 'Lazada store optimization, product photography, sponsored solutions, cross-border trade support, and logistics.',
       features: [],
       popular: false,
       color: 'from-blue-600 to-purple-800'
@@ -36,7 +36,7 @@ export default function PricingSection() {
       name: 'Shopee',
       price: '',
       period: '',
-      description: '',
+      description: 'Shopee store setup, product listing optimization, ad campaign management, inventory, and customer service.',
       features: [],
       popular: false,
       color: 'from-orange-600 to-red-800'
