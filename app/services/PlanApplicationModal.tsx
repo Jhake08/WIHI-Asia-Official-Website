@@ -14,11 +14,11 @@ export default function PlanApplicationModal({ isOpen, onClose, selectedPlan, pl
   const [fullName, setFullName] = useState('');
   const [contactNumber, setContactNumber] = useState('');
   const [email, setEmail] = useState('');
-  const [plan, setPlan] = useState(selectedPlan || '');
+  const [platform, setPlatform] = useState(selectedPlan || '');
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   useEffect(() => {
-    setPlan(selectedPlan || '');
+    setPlatform(selectedPlan || '');
   }, [selectedPlan]);
 
   useEffect(() => {
@@ -41,37 +41,39 @@ export default function PlanApplicationModal({ isOpen, onClose, selectedPlan, pl
 
   if (!isOpen) return null;
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
 
-  try {
-    const response = await fetch('/api/sendApplication', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        fullName,
-        contactNumber,
-        email,
-        plan,
-      }),
-    });
+    try {
+      const response = await fetch('/api/sendApplication', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName,
+          contactNumber,
+          email,
+          platform,
+        }),
+      });
 
-    if (response.ok) {
-      setShowConfirmation(true);
-    } else {
-      alert('Failed to send application. Please try again later.');
+      if (response.ok) {
+        setShowConfirmation(true);
+      } else {
+        alert('Failed to send application. Please try again later.');
+      }
+    } catch (error) {
+      alert('An error occurred. Please try again later.');
     }
-  } catch (error) {
-    alert('An error occurred. Please try again later.');
-  }
-};
+  };
 
-const handleConfirmationClose = () => {
-  setShowConfirmation(false);
-  onClose();
-};
+  const handleConfirmationClose = () => {
+    setShowConfirmation(false);
+    onClose();
+  };
+
+  const platforms = ['Facebook', 'TikTok', 'Shopee', 'Lazada'];
 
   return (
     <>
@@ -93,7 +95,7 @@ const handleConfirmationClose = () => {
           >
             &times;
           </button>
-          <h2 className="text-3xl font-bold mb-6 text-center">Apply for a Plan</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">Apply for a Platform</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label htmlFor="fullName" className="block mb-1 font-semibold">Full Name</label>
@@ -129,18 +131,18 @@ const handleConfirmationClose = () => {
               />
             </div>
             <div>
-              <label htmlFor="plan" className="block mb-1 font-semibold">Plan Selection</label>
+              <label htmlFor="platform" className="block mb-1 font-semibold">Choose Your Platform</label>
               <select
-                id="plan"
-                value={plan}
-                onChange={(e) => setPlan(e.target.value)}
+                id="platform"
+                value={platform}
+                onChange={(e) => setPlatform(e.target.value)}
                 required
                 className="w-full rounded-md p-2 text-black"
               >
-                <option value="" disabled>Select a plan</option>
-                {plans.map((p) => (
-                  <option key={p.name} value={p.name}>
-                    {p.name} - {p.price}
+                <option value="" disabled>Select a platform</option>
+                {platforms.map((p) => (
+                  <option key={p} value={p}>
+                    {p}
                   </option>
                 ))}
               </select>
