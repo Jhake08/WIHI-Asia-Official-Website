@@ -4,9 +4,9 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(request: NextRequest) {
   try {
     const data = await request.json();
-    const { fullName, contactNumber, email, plan } = data;
+    const { fullName, contactNumber, email, platform } = data;
 
-    if (!fullName || !contactNumber || !email || !plan) {
+    if (!fullName || !contactNumber || !email || !platform) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
@@ -22,14 +22,14 @@ export async function POST(request: NextRequest) {
     const mailOptions = {
       from: process.env.GMAIL_USER,
       to: process.env.GMAIL_USER, // Send to the same Gmail account
-      subject: 'New Plan Application Submission',
+      subject: 'New Platform Application Submission',
       text: `
-        New plan application received:
+        New platform application received:
 
         Full Name: ${fullName}
         Contact Number: ${contactNumber}
         Email Address: ${email}
-        Plan Selected: ${plan}
+        Platform Selected: ${platform}
       `,
     };
 
