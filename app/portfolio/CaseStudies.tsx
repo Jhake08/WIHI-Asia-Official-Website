@@ -106,7 +106,7 @@ export default function CaseStudies() {
         </div>
 
         <div className="text-center mt-16">
-          <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
+          <button className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
             Request Full Case Study
           </button>
         </div>

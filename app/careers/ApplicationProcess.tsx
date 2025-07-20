@@ -53,16 +53,16 @@ export default function ApplicationProcess() {
         </div>
 
         <div className="relative">
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-purple-600 via-blue-600 to-green-600 transform -translate-y-1/2"></div>
+          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-500 via-orange-500 to-green-600 transform -translate-y-1/2"></div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {steps.map((step, index) => (
               <div key={index} className="relative">
                 <div className="text-center">
-                  <div className="relative z-10 w-20 h-20 flex items-center justify-center bg-gradient-to-r from-purple-600 to-blue-600 rounded-full mx-auto mb-6 hover:scale-110 transition-transform duration-300 cursor-pointer">
+                <div className="relative z-10 w-20 h-20 flex items-center justify-center bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full mx-auto mb-6 hover:scale-110 transition-transform duration-300 cursor-pointer">
                     <i className={`${step.icon} text-white text-2xl`}></i>
                   </div>
-                  <div className="text-4xl font-bold text-purple-400/30 mb-2">{step.number}</div>
+                  <div className="text-4xl font-bold text-yellow-400/30 mb-2">{step.number}</div>
                   <h3 className="text-lg font-bold text-white mb-3">{step.title}</h3>
                   <p className="text-gray-300 text-sm mb-3 leading-relaxed">{step.description}</p>
                   <div className="inline-flex items-center px-3 py-1 bg-gray-800 rounded-full text-gray-400 text-xs">
@@ -78,13 +78,13 @@ export default function ApplicationProcess() {
         </div>
 
         <div className="mt-16 text-center">
-          <div className="p-8 bg-gradient-to-r from-purple-900/30 to-blue-900/30 backdrop-blur-sm border border-purple-500/30 rounded-2xl">
+          <div className="p-8 bg-gradient-to-r from-yellow-900/30 to-orange-900/30 backdrop-blur-sm border border-yellow-500/30 rounded-2xl">
             <h3 className="text-2xl font-bold text-white mb-4">Questions About the Process?</h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               We're here to help! Reach out to our HR team if you have any questions about the application process or specific requirements.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
+              <button className="px-8 py-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
                 Contact HR Team
               </button>
               <button className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300 whitespace-nowrap cursor-pointer">

@@ -39,7 +39,7 @@ export default function BenefitsSection() {
     {
       category: 'Professional Growth',
       icon: 'ri-graduation-cap-line',
-      color: 'from-purple-600 to-indigo-600',
+      color: 'from-yellow-500 to-orange-500',
       items: [
         'Annual learning and development budget',
         'Conference attendance and training programs',

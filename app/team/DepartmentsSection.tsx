@@ -16,7 +16,7 @@ export default function DepartmentsSection() {
       memberCount: 12,
       description: 'Driving growth through strategic campaigns',
       icon: 'ri-megaphone-line',
-      color: 'from-purple-600 to-pink-600',
+      color: 'from-yellow-500 to-orange-500',
       skills: ['Social Media', 'PPC', 'SEO', 'Content', 'Analytics']
     },
     {

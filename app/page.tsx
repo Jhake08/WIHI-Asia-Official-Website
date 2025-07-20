@@ -22,7 +22,7 @@ export default function Home() {
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Dominate Every
-            <span className="block bg-gradient-to-r from-blue-400 to-purple-600 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
               Platform
             </span>
           </h1>
@@ -30,7 +30,7 @@ export default function Home() {
             We transform businesses across Facebook, TikTok, Shopee, and Lazada with cutting-edge ecommerce strategies that deliver exceptional results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
+            <Link href="/contact" className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
               Start Your Journey
             </Link>
             <Link href="/portfolio" className="border border-gray-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition-all duration-300 whitespace-nowrap cursor-pointer">
@@ -55,7 +55,7 @@ export default function Home() {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-white mb-16">
-            Master Every <span className="text-blue-400">Platform</span>
+            Master Every <span className="text-yellow-400">Platform</span>
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -63,7 +63,7 @@ export default function Home() {
               { name: 'Facebook', icon: 'ri-facebook-fill', color: 'from-blue-600 to-blue-400', desc: 'Social Commerce Excellence' },
               { name: 'TikTok', icon: 'ri-tiktok-fill', color: 'from-pink-600 to-pink-400', desc: 'Viral Marketing Mastery' },
               { name: 'Shopee', icon: 'ri-shopping-bag-fill', color: 'from-orange-600 to-orange-400', desc: 'Marketplace Domination' },
-              { name: 'Lazada', icon: 'ri-shopping-cart-fill', color: 'from-purple-600 to-purple-400', desc: 'Regional Leadership' }
+              { name: 'Lazada', icon: 'ri-shopping-cart-fill', color: 'from-yellow-500 to-yellow-400', desc: 'Regional Leadership' }
             ].map((platform) => (
               <div key={platform.name} className="group">
                 <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-2xl p-8 text-center hover:border-gray-600 transition-all duration-500 hover:scale-105 cursor-pointer">
@@ -147,7 +147,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-12">
-            <Link href="/services" className="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
+            <Link href="/services" className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
               Explore All Services
             </Link>
           </div>
