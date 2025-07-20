@@ -56,7 +56,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent transition-all duration-700 hover:scale-105 whitespace-nowrap cursor-pointer animate-fade-in-up"
+                className="text-yellow-500 hover:text-orange-500 transition-colors duration-300 hover:scale-105 whitespace-nowrap cursor-pointer"
               >
                 {item.name}
               </Link>
@@ -77,7 +77,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block py-2 bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent transition-all duration-700 hover:scale-105 cursor-pointer animate-fade-in-up"
+                className="block py-2 text-yellow-500 hover:text-orange-500 transition-colors duration-300 hover:scale-105 cursor-pointer"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
