@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -7,65 +6,53 @@ import PlanApplicationModal from './PlanApplicationModal';
 export default function PricingSection() {
   const plans = [
     {
-      name: 'Starter',
-      price: '₱999',
-      period: '/month',
-      description: 'Perfect for small businesses getting started',
-      features: [
-        '1 Platform Management',
-        'Basic Store Setup',
-        'Monthly Performance Reports',
-        'Email Support',
-        'Up to 100 Products'
-      ],
+      name: 'Facebook',
+      price: '',
+      period: '',
+      description: '',
+      features: [],
       popular: false,
-      color: 'from-gray-600 to-gray-800'
+      color: 'from-blue-600 to-blue-800'
     },
     {
-      name: 'Professional',
-      price: '₱2,499',
-      period: '/month',
-      description: 'Ideal for growing businesses',
-      features: [
-        '2 Platform Management',
-        'Advanced Store Optimization',
-        'Bi-weekly Strategy Calls',
-        'Priority Support',
-        'Up to 500 Products',
-        'Custom Analytics Dashboard'
-      ],
+      name: 'TikTok',
+      price: '',
+      period: '',
+      description: '',
+      features: [],
       popular: true,
-      color: 'from-blue-600 to-purple-600'
+      color: 'from-pink-600 to-purple-800'
     },
     {
-      name: 'Enterprise',
-      price: '₱4,999',
-      period: '/month',
-      description: 'Complete solution for large businesses',
-      features: [
-        'All Platform Management',
-        'Full-Service Management',
-        'Weekly Strategy Sessions',
-        'Dedicated Account Manager',
-        'Unlimited Products',
-        'Advanced Analytics & Insights',
-        'Custom Integrations'
-      ],
+      name: 'Lazada',
+      price: '',
+      period: '',
+      description: '',
+      features: [],
       popular: false,
-      color: 'from-purple-600 to-pink-600'
+      color: 'from-blue-600 to-purple-800'
+    },
+    {
+      name: 'Shopee',
+      price: '',
+      period: '',
+      description: '',
+      features: [],
+      popular: false,
+      color: 'from-orange-600 to-red-800'
     }
   ];
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedPlan, setSelectedPlan] = useState<string | null>(null);
+  const [selectedPlatform, setSelectedPlatform] = useState<string | null>(null);
 
-  const openModal = (planName: string) => {
-    setSelectedPlan(planName);
+  const openModal = (platformName: string) => {
+    setSelectedPlatform(platformName);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
-    setSelectedPlan(null);
+    setSelectedPlatform(null);
     setIsModalOpen(false);
   };
 
@@ -74,14 +61,14 @@ export default function PricingSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Choose Your <span className="text-blue-400">Plan</span>
+            Choose Your <span className="text-blue-400">Platform</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Flexible pricing options designed to scale with your business growth.
+            Specialized platform options designed to scale with your business growth.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {plans.map((plan, index) => (
             <div
               key={index}
@@ -90,6 +77,7 @@ export default function PricingSection() {
               } rounded-2xl hover:scale-105 transition-all duration-300 cursor-pointer ${
                 plan.popular ? 'ring-2 ring-blue-500/20' : ''
               }`}
+              onClick={() => openModal(plan.name)}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -98,7 +86,7 @@ export default function PricingSection() {
                   </div>
                 </div>
               )}
-              
+
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
                 <p className="text-gray-300 text-sm mb-6">{plan.description}</p>
@@ -137,8 +125,7 @@ export default function PricingSection() {
       <PlanApplicationModal
         isOpen={isModalOpen}
         onClose={closeModal}
-        selectedPlan={selectedPlan}
-        plans={plans}
+        selectedPlatform={selectedPlatform}
       />
     </section>
   );
