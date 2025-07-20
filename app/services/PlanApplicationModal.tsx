@@ -6,20 +6,19 @@ import ConfirmationMessageBox from './ConfirmationMessageBox';
 interface PlanApplicationModalProps {
   isOpen: boolean;
   onClose: () => void;
-  selectedPlan: string | null;
-  plans: { name: string; price: string }[];
+  selectedPlatform: string | null;
 }
 
-export default function PlanApplicationModal({ isOpen, onClose, selectedPlan, plans }: PlanApplicationModalProps) {
+export default function PlanApplicationModal({ isOpen, onClose, selectedPlatform }: PlanApplicationModalProps) {
   const [fullName, setFullName] = useState('');
   const [contactNumber, setContactNumber] = useState('');
   const [email, setEmail] = useState('');
-  const [platform, setPlatform] = useState(selectedPlan || '');
+  const [platform, setPlatform] = useState(selectedPlatform || '');
   const [showConfirmation, setShowConfirmation] = useState(false);
 
   useEffect(() => {
-    setPlatform(selectedPlan || '');
-  }, [selectedPlan]);
+    setPlatform(selectedPlatform || '');
+  }, [selectedPlatform]);
 
   useEffect(() => {
     const handleEsc = (event: KeyboardEvent) => {
@@ -73,7 +72,7 @@ export default function PlanApplicationModal({ isOpen, onClose, selectedPlan, pl
     onClose();
   };
 
-  const platforms = ['Facebook', 'TikTok', 'Shopee', 'Lazada'];
+  const platforms = ['FACEBOOK', 'TIKTOK', 'LAZADA', 'SHOPEE'];
 
   return (
     <>
@@ -95,7 +94,7 @@ export default function PlanApplicationModal({ isOpen, onClose, selectedPlan, pl
           >
             &times;
           </button>
-          <h2 className="text-3xl font-bold mb-6 text-center">Apply for a Platform</h2>
+          <h2 className="text-3xl font-bold mb-6 text-center">Choose Your Platform</h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label htmlFor="fullName" className="block mb-1 font-semibold">Full Name</label>
