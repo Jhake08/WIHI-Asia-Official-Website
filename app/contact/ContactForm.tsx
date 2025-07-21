@@ -143,7 +143,7 @@ export default function ContactForm() {
                   <option value="">Select budget range</option>
                   <option value="under-₱1k">Under ₱1,000/month</option>
                   <option value="1k-5k">1,000 - ₱5,000/month</option>
-                  <option value="5k-10k",5,000 - ₱10,000/month</option>
+                  <option value="5k-10k">,5,000 - ₱10,000/month</option>
                   <option value="10k-plus">₱10,000+/month</option>
                   <option value="project">One-time project</option>
                 </select>
