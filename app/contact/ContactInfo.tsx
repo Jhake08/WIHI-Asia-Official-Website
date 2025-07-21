@@ -6,22 +6,19 @@ export default function ContactInfo() {
     {
       icon: 'ri-mail-line',
       title: 'Email Us',
-      primary: 'hello@company.com',
-      secondary: 'support@company.com',
+      primary: 'viaca21wihiasiamarketing.inc@gmail.com',
       description: 'Get a response within 24 hours'
     },
     {
       icon: 'ri-phone-line',
       title: 'Call Us',
-      primary: '+1 (555) 123-4567',
-      secondary: '+1 (555) 987-6543',
-      description: 'Mon-Fri, 9AM-6PM PST'
+      primary: '+63 (0976 055 2152)',
+      description: 'Mon-Fri, 9AM-5PM PST'
     },
     {
       icon: 'ri-map-pin-line',
       title: 'Visit Us',
-      primary: '123 Innovation Drive',
-      secondary: 'San Francisco, CA 94107',
+      primary: '#99 MH Del Pilar Street, Brgy Balite,, Rodriguez, Philippines',
       description: 'Schedule an appointment'
     },
     {
@@ -36,7 +33,7 @@ export default function ContactInfo() {
   const socialLinks = [
     { icon: 'ri-linkedin-fill', platform: 'LinkedIn', url: '#' },
     { icon: 'ri-twitter-fill', platform: 'Twitter', url: '#' },
-    { icon: 'ri-facebook-fill', platform: 'Facebook', url: '#' },
+    { icon: 'ri-facebook-fill', platform: 'Facebook', url: 'https://www.facebook.com/WIHIAsiaMarkerting' },
     { icon: 'ri-instagram-fill', platform: 'Instagram', url: '#' }
   ];
 

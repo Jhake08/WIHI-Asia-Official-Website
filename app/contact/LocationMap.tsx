@@ -17,19 +17,19 @@ export default function LocationMap() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <div className="space-y-6">
             <div className="p-6 bg-black/30 backdrop-blur-sm border border-gray-700 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">San Francisco Headquarters</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Rodriguez Rizal Headquarters</h3>
               <div className="space-y-3">
                 <div className="flex items-center text-gray-300">
                   <div className="w-5 h-5 flex items-center justify-center mr-3">
                     <i className="ri-map-pin-line text-green-400"></i>
                   </div>
-                  <span>123 Innovation Drive, San Francisco, CA 94107</span>
+                  <span>#99 MH Del Pilar Street, Brgy Balite,, Rodriguez, Philippines</span>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <div className="w-5 h-5 flex items-center justify-center mr-3">
                     <i className="ri-phone-line text-green-400"></i>
                   </div>
-                  <span>+1 (555) 123-4567</span>
+                  <span>+63 (0976 055 2152)</span>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <div className="w-5 h-5 flex items-center justify-center mr-3">
@@ -41,25 +41,25 @@ export default function LocationMap() {
             </div>
 
             <div className="p-6 bg-black/30 backdrop-blur-sm border border-gray-700 rounded-xl">
-              <h3 className="text-xl font-bold text-white mb-4">New York Office</h3>
+              <h3 className="text-xl font-bold text-white mb-4">Montalban Rizal</h3>
               <div className="space-y-3">
                 <div className="flex items-center text-gray-300">
                   <div className="w-5 h-5 flex items-center justify-center mr-3">
                     <i className="ri-map-pin-line text-blue-400"></i>
                   </div>
-                  <span>456 Business Ave, New York, NY 10001</span>
+                  <span>167 J. P. Rizal St, Balite, Rodriguez, 1860 Rizal</span>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <div className="w-5 h-5 flex items-center justify-center mr-3">
                     <i className="ri-phone-line text-blue-400"></i>
                   </div>
-                  <span>+1 (555) 987-6543</span>
+                  <span>+63 (0976 055 2152)</span>
                 </div>
                 <div className="flex items-center text-gray-300">
                   <div className="w-5 h-5 flex items-center justify-center mr-3">
                     <i className="ri-time-line text-blue-400"></i>
                   </div>
-                  <span>Mon-Fri: 9AM-6PM EST</span>
+                  <span>Mon-Fri: 9AM-5PM EST</span>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function LocationMap() {
 
           <div className="relative">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.890459906618!2d-122.39176768468105!3d37.79239087975594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807c4e8b6a05%3A0x49e0d7b7c0e5a6f7!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1635789012345!5m2!1sen!2sus"
+              src="https://www.google.com/maps/place/Rc+Fitness+Gym/@14.7354738,121.1465851,17z/data=!4m6!3m5!1s0x3397bb3f5ab62f81:0xd645201a52037757!8m2!3d14.7354686!4d121.1474434!16s%2Fg%2F11ggjd6qlh?entry=ttu&g_ep=EgoyMDI1MDcxNi4wIKXMDSoASAFQAw%3D%3D"
               className="w-full h-96 lg:h-full rounded-xl border border-gray-700"
               style={{ minHeight: '400px' }}
               allowFullScreen
@@ -88,7 +88,7 @@ export default function LocationMap() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
             <div className="absolute top-4 right-4 p-3 bg-black/70 backdrop-blur-sm border border-gray-600 rounded-lg">
-              <div className="text-white font-medium text-sm">San Francisco HQ</div>
+              <div className="text-white font-medium text-sm">Rodriguez Rizal HQ</div>
               <div className="text-gray-300 text-xs">Main Office Location</div>
             </div>
           </div>

@@ -141,10 +141,10 @@ export default function ContactForm() {
                   className="w-full px-4 py-3 bg-black/50 border border-gray-600 rounded-lg text-white focus:border-cyan-500 focus:outline-none transition-colors text-sm pr-8 appearance-none"
                 >
                   <option value="">Select budget range</option>
-                  <option value="under-1k">Under $1,000/month</option>
-                  <option value="1k-5k">$1,000 - $5,000/month</option>
-                  <option value="5k-10k">$5,000 - $10,000/month</option>
-                  <option value="10k-plus">$10,000+/month</option>
+                  <option value="under-1k">Under ₱1,000/month</option>
+                  <option value="1k-5k">$1,000 - ₱5,000/month</option>
+                  <option value="5k-10k">$5,000 - ₱10,000/month</option>
+                  <option value="10k-plus">₱10,000+/month</option>
                   <option value="project">One-time project</option>
                 </select>
                 <div className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center pointer-events-none">

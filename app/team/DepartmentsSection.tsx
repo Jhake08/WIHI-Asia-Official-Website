@@ -4,52 +4,52 @@
 export default function DepartmentsSection() {
   const departments = [
     {
-      name: 'Engineering',
+      name: 'Management',
       memberCount: 15,
-      description: 'Building robust and scalable ecommerce solutions',
+      description: 'Leading strategic vision, operational excellence, and cross-department collaboration to drive ecommerce success.',
       icon: 'ri-code-line',
       color: 'from-blue-600 to-cyan-600',
-      skills: ['React', 'Node.js', 'Python', 'AWS', 'DevOps']
+      skills: ['Strategic Planning', 'Team Leadership', 'KPI Analysis', 'Budgeting', 'Process Optimization', 'Stakeholder Management', 'Risk Management']
     },
     {
-      name: 'Marketing',
+      name: 'Facebook Department',
       memberCount: 12,
-      description: 'Driving growth through strategic campaigns',
+      description: 'Driving social commerce growth through engaging Facebook campaigns and seamless shopping experiences.',
       icon: 'ri-megaphone-line',
       color: 'from-yellow-500 to-orange-500',
-      skills: ['Social Media', 'PPC', 'SEO', 'Content', 'Analytics']
+      skills: ['Facebook Ads', 'Meta Business Suite', 'Audience Targeting', 'Social Media Analytics', 'Content Creation', 'Conversion Rate Optimization', 'A/B Testing']
     },
     {
-      name: 'Design',
+      name: 'Tiktok Department',
       memberCount: 8,
-      description: 'Creating beautiful and intuitive user experiences',
+      description: 'Harnessing the power of viral content to boost ecommerce sales on TikTok’s dynamic platform.',
       icon: 'ri-palette-line',
       color: 'from-green-600 to-teal-600',
-      skills: ['UI/UX', 'Figma', 'Prototyping', 'Branding', 'Motion']
+      skills: ['TikTok Ads', 'Viral Content Strategy', 'Short-Form Video Editing', 'Influencer Collaboration', 'Hashtag Optimization', 'TikTok Shop', 'Live Commerce']
     },
     {
-      name: 'Data Science',
+      name: 'Shopee Department',
       memberCount: 6,
-      description: 'Turning data into actionable business insights',
+      description: 'Optimizing Shopee storefronts and campaigns to maximize conversions and marketplace success.',
       icon: 'ri-bar-chart-line',
       color: 'from-orange-600 to-red-600',
-      skills: ['Python', 'SQL', 'Machine Learning', 'Visualization', 'Statistics']
+      skills: ['Lazada Seller Hub', 'Sponsored Ads', 'LazMall', 'Cross-Border Logistics', 'Promotion Strategy', 'Lazada Live', 'ROI Tracking']
     },
     {
-      name: 'Customer Success',
+      name: 'Lazada Department',
       memberCount: 10,
-      description: 'Ensuring client satisfaction and growth',
+      description: 'Delivering high-performance Lazada store strategies to enhance visibility and sales.',
       icon: 'ri-customer-service-line',
       color: 'from-yellow-600 to-orange-600',
       skills: ['Support', 'Training', 'Onboarding', 'Retention', 'Communication']
     },
     {
-      name: 'Operations',
+      name: 'Logistics Department',
       memberCount: 5,
-      description: 'Streamlining processes and ensuring efficiency',
+      description: 'Ensuring fast, reliable, and cost-effective delivery solutions for a seamless customer experience.',
       icon: 'ri-settings-line',
       color: 'from-gray-600 to-gray-800',
-      skills: ['Project Management', 'Process Optimization', 'Quality Assurance', 'Documentation']
+      skills: ['Supply Chain Management', 'Last-Mile Delivery', 'Warehouse Management', 'Shipping Negotiation', 'Reverse Logistics', 'Real-Time Tracking']
     }
   ];
 
