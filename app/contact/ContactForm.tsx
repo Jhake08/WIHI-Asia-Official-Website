@@ -55,33 +55,33 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <label className="block text-white font-medium mb-2">Full Name *</label>
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 bg-black/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-cyan-500 focus:outline-none transition-colors text-sm"
-                placeholder="Your full name"
-              />
+          <form id="contact-form" onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-white font-medium mb-2">Full Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-black/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-cyan-500 focus:outline-none transition-colors text-sm"
+                  placeholder="Your full name"
+                />
+              </div>
+              <div>
+                <label className="block text-white font-medium mb-2">Email Address *</label>
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-black/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-cyan-500 focus:outline-none transition-colors text-sm"
+                  placeholder="your.email@company.com"
+                />
+              </div>
             </div>
-            <div>
-              <label className="block text-white font-medium mb-2">Email Address *</label>
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                className="w-full px-4 py-3 bg-black/50 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-cyan-500 focus:outline-none transition-colors text-sm"
-                placeholder="your.email@company.com"
-              />
-            </div>
-          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
@@ -142,11 +142,11 @@ export default function ContactForm() {
                 >
                   <option value="">Select budget range</option>
                   <option value="under-₱1k">Under ₱1,000/month</option>
-                  <option value="1k-5k"> ₱1,000 - ₱5,000/month</option>
-                  <option value="5k-10k" ₱5,000 - ₱10,000/month</option>
-                  <option value="10k-plus">₱10,000+/month</option>
-                  <option value="project">One-time project</option>
-                </select>
+              <option value="1k-5k"> ₱1,000 - ₱5,000/month</option>
+              <option value="5k-10k">₱5,000 - ₱10,000/month</option>
+              <option value="10k-plus">₱10,000+/month</option>
+              <option value="project">One-time project</option>
+            </select>
                 <div className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center pointer-events-none">
                   <i className="ri-arrow-down-s-line text-gray-400"></i>
                 </div>
