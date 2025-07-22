@@ -33,7 +33,7 @@ export default function DepartmentsSection() {
       description: 'Optimizing Shopee storefronts and campaigns to maximize conversions and marketplace success.',
       icon: 'ri-bar-chart-line',
       color: 'from-orange-600 to-red-600',
-      skills: ['Lazada Seller Hub', 'Sponsored Ads', 'LazMall', 'Cross-Border Logistics', 'Promotion Strategy', 'Lazada Live', 'ROI Tracking']
+      skills: ['Shopee Seller Center', 'Product SEO', 'Flash Sales', 'Shopee Live', 'Affiliate Marketing', 'Pricing Analysis', 'Order Fulfillment']
     },
     {
       name: 'Lazada Department',
@@ -41,7 +41,7 @@ export default function DepartmentsSection() {
       description: 'Delivering high-performance Lazada store strategies to enhance visibility and sales.',
       icon: 'ri-customer-service-line',
       color: 'from-yellow-600 to-orange-600',
-      skills: ['Support', 'Training', 'Onboarding', 'Retention', 'Communication']
+      skills: ['Lazada Seller Hub', 'Sponsored Ads', 'LazMall', 'Cross-Border Logistics', 'Promotion Strategy', 'Lazada Live', 'ROI Tracking']
     },
     {
       name: 'Logistics Department',
