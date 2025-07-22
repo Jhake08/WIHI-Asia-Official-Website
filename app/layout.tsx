@@ -35,7 +35,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       <head>
         <title>WihiAsiaMarketingInc.</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon-new.ico" />
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
       </head>
       <body
