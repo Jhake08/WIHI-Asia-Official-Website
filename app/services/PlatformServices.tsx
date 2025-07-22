@@ -62,7 +62,37 @@ export default function PlatformServices() {
         'Market Intelligence Reports'
       ],
       image: 'https://readdy.ai/api/search-image?query=Lazada%20marketplace%20seller%20center%20interface%20showing%20comprehensive%20ecommerce%20tools%2C%20blue%20and%20purple%20themed%20online%20shopping%20platform%2C%20professional%20Southeast%20Asian%20marketplace%20dashboard%20with%20analytics%20and%20inventory%20management%20features&width=400&height=300&seq=lazada-service&orientation=landscape'
-    }
+    },
++    {
++      name: 'Travel Agency',
++      icon: 'ri-plane-fill',
++      color: 'from-cyan-600 to-blue-800',
++      borderColor: 'border-cyan-500/30',
++      services: [
++        'Custom Travel Packages',
++        'Flight & Hotel Booking',
++        'Tour Planning & Itinerary',
++        'Travel Insurance Assistance',
++        '24/7 Customer Support',
++        'Exclusive Deals & Discounts'
++      ],
++      image: 'https://readdy.ai/api/search-image?query=Travel%20agency%20office%20with%20maps%20and%20laptops%20showing%20booking%20systems%20and%20travel%20packages&width=400&height=300&seq=travel-agency&orientation=landscape'
++    },
++    {
++      name: 'Salon Spa',
++      icon: 'ri-spa-fill',
++      color: 'from-pink-600 to-purple-800',
++      borderColor: 'border-pink-500/30',
++      services: [
++        'Spa & Wellness Packages',
++        'Appointment Scheduling',
++        'Beauty & Hair Services',
++        'Customer Loyalty Programs',
++        'Product Sales & Promotions',
++        'Professional Staff Training'
++      ],
++      image: 'https://readdy.ai/api/search-image?query=Salon%20spa%20interior%20with%20massage%20beds%20and%20beauty%20products%20displayed%20in%20a%20modern%20setting&width=400&height=300&seq=salon-spa&orientation=landscape'
++    }
   ];
 
   return (

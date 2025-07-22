@@ -20,23 +20,47 @@ export default function ServicesHero() {
         <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
           Comprehensive ecommerce solutions tailored for Facebook, TikTok, Shopee, and Lazada platforms. We help you dominate every marketplace.
         </p>
-        <div className="flex flex-wrap gap-4 justify-center mb-8">
-          <div className="px-4 py-2 bg-blue-600/20 border border-blue-500/30 rounded-full text-blue-300 text-sm backdrop-blur-sm">
-            Facebook Commerce
+          <div className="flex flex-wrap gap-4 justify-center mb-8">
+            <div className="px-4 py-2 bg-blue-600/20 border border-blue-500/30 rounded-full text-blue-300 text-sm backdrop-blur-sm flex items-center gap-2 cursor-pointer">
+              Facebook Commerce
+              <button className="ml-2 px-3 py-1 bg-blue-600 rounded-full text-white text-xs font-semibold hover:bg-blue-700 transition-colors">
+                Book Now
+              </button>
+            </div>
+            <div className="px-4 py-2 bg-purple-600/20 border border-purple-500/30 rounded-full text-purple-300 text-sm backdrop-blur-sm flex items-center gap-2 cursor-pointer">
+              TikTok Shop
+              <button className="ml-2 px-3 py-1 bg-purple-600 rounded-full text-white text-xs font-semibold hover:bg-purple-700 transition-colors">
+                Book Now
+              </button>
+            </div>
+            <div className="px-4 py-2 bg-green-600/20 border border-green-500/30 rounded-full text-green-300 text-sm backdrop-blur-sm flex items-center gap-2 cursor-pointer">
+              Shopee Management
+              <button className="ml-2 px-3 py-1 bg-green-600 rounded-full text-white text-xs font-semibold hover:bg-green-700 transition-colors">
+                Book Now
+              </button>
+            </div>
+            <div className="px-4 py-2 bg-orange-600/20 border border-orange-500/30 rounded-full text-orange-300 text-sm backdrop-blur-sm flex items-center gap-2 cursor-pointer">
+              Lazada Solutions
+              <button className="ml-2 px-3 py-1 bg-orange-600 rounded-full text-white text-xs font-semibold hover:bg-orange-700 transition-colors">
+                Book Now
+              </button>
+            </div>
+            <div className="px-4 py-2 bg-cyan-600/20 border border-cyan-500/30 rounded-full text-cyan-300 text-sm backdrop-blur-sm flex items-center gap-2 cursor-pointer">
+              Travel Agency
+              <button className="ml-2 px-3 py-1 bg-cyan-600 rounded-full text-white text-xs font-semibold hover:bg-cyan-700 transition-colors">
+                Book Now
+              </button>
+            </div>
+            <div className="px-4 py-2 bg-pink-600/20 border border-pink-500/30 rounded-full text-pink-300 text-sm backdrop-blur-sm flex items-center gap-2 cursor-pointer">
+              Salon Spa
+              <button className="ml-2 px-3 py-1 bg-pink-600 rounded-full text-white text-xs font-semibold hover:bg-pink-700 transition-colors">
+                Book Now
+              </button>
+            </div>
           </div>
-          <div className="px-4 py-2 bg-purple-600/20 border border-purple-500/30 rounded-full text-purple-300 text-sm backdrop-blur-sm">
-            TikTok Shop
-          </div>
-          <div className="px-4 py-2 bg-green-600/20 border border-green-500/30 rounded-full text-green-300 text-sm backdrop-blur-sm">
-            Shopee Management
-          </div>
-          <div className="px-4 py-2 bg-orange-600/20 border border-orange-500/30 rounded-full text-orange-300 text-sm backdrop-blur-sm">
-            Lazada Solutions
-          </div>
-        </div>
-        <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm">
-          Get Started Today
-        </button>
+          <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-full hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer backdrop-blur-sm">
+            Get Started Today
+          </button>
       </div>
     </section>
   );
