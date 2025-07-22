@@ -1,170 +1,203 @@
 'use client';
 
 import { useState } from 'react';
-import PlanApplicationModal from './PlanApplicationModal';
+
+const platformData = [
+  {
+    name: 'Facebook Commerce',
+    images: [
+      '/images/facebook1.jpg',
+      '/images/facebook2.jpg',
+      '/images/facebook3.jpg',
+      '/images/facebook4.jpg',
+      '/images/facebook5.jpg',
+      '/images/facebook6.jpg',
+      '/images/facebook7.jpg',
+    ],
+    description: 'Boost your sales with a comprehensive Facebook Shop setup and Instagram Shopping integration.',
+    buttonLabel: 'Shop Now',
+    shopUrl: 'https://www.facebook.com/commerce',
+  },
+  {
+    name: 'TikTok Shop',
+    images: [
+      '/images/tiktok1.jpg',
+      '/images/tiktok2.jpg',
+      '/images/tiktok3.jpg',
+      '/images/tiktok4.jpg',
+      '/images/tiktok5.jpg',
+      '/images/tiktok6.jpg',
+      '/images/tiktok7.jpg',
+    ],
+    description: 'Engage customers with live shopping events and influencer partnerships on TikTok.',
+    buttonLabel: 'Shop Now',
+    shopUrl: 'https://www.tiktok.com/shop',
+  },
+  {
+    name: 'Lazada Solutions',
+    images: [
+      '/images/lazada1.jpg',
+      '/images/lazada2.jpg',
+      '/images/lazada3.jpg',
+      '/images/lazada4.jpg',
+      '/images/lazada5.jpg',
+      '/images/lazada6.jpg',
+      '/images/lazada7.jpg',
+    ],
+    description: 'Optimize your Lazada store with product photography and sponsored solutions.',
+    buttonLabel: 'Shop Now',
+    shopUrl: 'https://www.lazada.com',
+  },
+  {
+    name: 'Shopee Management',
+    images: [
+      '/images/shopee1.jpg',
+      '/images/shopee2.jpg',
+      '/images/shopee3.jpg',
+      '/images/shopee4.jpg',
+      '/images/shopee5.jpg',
+      '/images/shopee6.jpg',
+      '/images/shopee7.jpg',
+    ],
+    description: 'Manage your Shopee store with product listing optimization and ad campaigns.',
+    buttonLabel: 'Shop Now',
+    shopUrl: 'https://shopee.com',
+  },
+  {
+    name: 'Travel Agency',
+    images: [
+      '/images/travel1.jpg',
+      '/images/travel2.jpg',
+      '/images/travel3.jpg',
+      '/images/travel4.jpg',
+      '/images/travel5.jpg',
+      '/images/travel6.jpg',
+      '/images/travel7.jpg',
+    ],
+    description: 'Book your dream vacation with our trusted travel agency services.',
+    buttonLabel: 'Book Now',
+    shopUrl: 'https://travelagency.example.com',
+  },
+  {
+    name: 'Salon Spa',
+    images: [
+      '/images/salon1.jpg',
+      '/images/salon2.jpg',
+      '/images/salon3.jpg',
+      '/images/salon4.jpg',
+      '/images/salon5.jpg',
+      '/images/salon6.jpg',
+      '/images/salon7.jpg',
+    ],
+    description: 'Relax and rejuvenate with our premium salon and spa services.',
+    buttonLabel: 'Book Now',
+    shopUrl: 'https://salonspa.example.com',
+  },
+];
+
+function PlatformGallery({ platform }: { platform: { name: string; images: string[]; description: string; buttonLabel: string; shopUrl: string } }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImageIndex, setModalImageIndex] = useState(0);
+  const images = platform.images;
+
+  function prevImage() {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  }
+
+  function nextImage() {
+    setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+  }
+
+  function openModal(index: number) {
+    setModalImageIndex(index);
+    setIsModalOpen(true);
+  }
+
+  function closeModal() {
+    setIsModalOpen(false);
+  }
+
+  return (
+    <>
+      <div className="max-w-md mx-auto bg-black/30 backdrop-blur-sm rounded-lg p-6 text-white flex flex-col">
+        <h3 className="text-2xl font-bold mb-2">{platform.name}</h3>
+        <p className="text-gray-300 mb-4 text-sm">{platform.description}</p>
+        <div className="relative flex-1">
+          <img
+            src={images[currentIndex]}
+            alt={`${platform.name} product ${currentIndex + 1}`}
+            className="w-full h-48 object-cover rounded-md cursor-pointer"
+            onClick={() => openModal(currentIndex)}
+          />
+          <button
+            onClick={prevImage}
+            className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 rounded-full p-2 hover:bg-black/70"
+            aria-label="Previous Image"
+          >
+            ‹
+          </button>
+          <button
+            onClick={nextImage}
+            className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 rounded-full p-2 hover:bg-black/70"
+            aria-label="Next Image"
+          >
+            ›
+          </button>
+        </div>
+        <a
+          href={platform.shopUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-block px-6 py-2 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white font-semibold hover:scale-105 transition-transform text-center"
+        >
+          {platform.buttonLabel}
+        </a>
+      </div>
+
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={closeModal}
+        >
+          <img
+            src={images[modalImageIndex]}
+            alt={`${platform.name} product ${modalImageIndex + 1}`}
+            className="max-w-4xl max-h-full rounded-lg shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          />
+          <button
+            onClick={closeModal}
+            className="absolute top-4 right-4 text-white text-3xl font-bold"
+            aria-label="Close Modal"
+          >
+            ×
+          </button>
+        </div>
+      )}
+    </>
+  );
+}
 
 export default function PricingSection() {
-  const plans = [
-    {
-      name: 'Facebook',
-      price: '',
-      period: '',
-      description: (
-        <>
-          <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
-            <li>Comprehensive Facebook Shop setup</li>
-            <li>Instagram Shopping integration</li>
-            <li>Ads management</li>
-            <li>Performance analytics</li>
-          </ul>
-        </>
-      ),
-      features: [],
-      popular: false,
-      color: 'from-blue-600 to-blue-800'
-    },
-    {
-      name: 'TikTok',
-      price: '',
-      period: '',
-      description: (
-        <>
-          <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
-            <li>TikTok Shop creation</li>
-            <li>Live shopping events</li>
-            <li>Influencer partnerships</li>
-            <li>Optimized ad campaigns</li>
-          </ul>
-        </>
-      ),
-      features: [],
-      popular: true,
-      color: 'from-pink-600 to-purple-800'
-    },
-    {
-      name: 'Lazada',
-      price: '',
-      period: '',
-      description: (
-        <>
-          <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
-            <li>Lazada store optimization</li>
-            <li>Product photography</li>
-            <li>Sponsored solutions</li>
-            <li>Cross-border trade support</li>
-            <li>Logistics</li>
-          </ul>
-        </>
-      ),
-      features: [],
-      popular: false,
-      color: 'from-blue-600 to-purple-800'
-    },
-    {
-      name: 'Shopee',
-      price: '',
-      period: '',
-      description: (
-        <>
-          <ul className="list-disc list-inside space-y-1 text-gray-300 text-sm">
-            <li>Shopee store setup</li>
-            <li>Product listing optimization</li>
-            <li>Ad campaign management</li>
-            <li>Inventory management</li>
-            <li>Customer service</li>
-          </ul>
-        </>
-      ),
-      features: [],
-      popular: false,
-      color: 'from-orange-600 to-red-800'
-    }
-  ];
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedPlatform, setSelectedPlatform] = useState<string | null>(null);
-
-  const openModal = (platformName: string) => {
-    setSelectedPlatform(platformName);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setSelectedPlatform(null);
-    setIsModalOpen(false);
-  };
-
   return (
     <section className="py-20 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Choose Your <span className="text-blue-400">Platform</span>
+            Choose Your <span className="text-blue-400">Product</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Specialized platform options designed to scale with your business growth.
+            Specialized product galleries designed to boost your shop and engage customers.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`relative p-8 bg-black/30 backdrop-blur-sm border ${
-                plan.popular ? 'border-blue-500/50' : 'border-gray-700'
-              } rounded-2xl hover:scale-105 transition-all duration-300 cursor-pointer ${
-                plan.popular ? 'ring-2 ring-blue-500/20' : ''
-              }`}
-              onClick={() => openModal(plan.name)}
-            >
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <div className="px-4 py-1 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-semibold rounded-full">
-                    Most Popular
-                  </div>
-                </div>
-              )}
-
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
-                <div className="text-gray-300 text-sm mb-6">{plan.description}</div>
-                <div className="flex items-baseline justify-center mb-6">
-                  <span className="text-4xl font-bold text-white">{plan.price}</span>
-                  <span className="text-gray-400 ml-1">{plan.period}</span>
-                </div>
-              </div>
-
-              <ul className="space-y-4 mb-8">
-                {plan.features.map((feature, featureIndex) => (
-                  <li key={featureIndex} className="flex items-center text-gray-300">
-                    <div className="w-4 h-4 flex items-center justify-center mr-3">
-                      <i className="ri-check-line text-green-400 text-sm"></i>
-                    </div>
-                    <span className="text-sm">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <button
-                onClick={() => openModal(plan.name)}
-                className={`w-full py-4 ${
-                  plan.popular
-                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white'
-                    : 'border-2 border-gray-600 text-gray-300 hover:border-gray-500'
-                } font-semibold rounded-full transition-all duration-300 whitespace-nowrap cursor-pointer`}
-              >
-                Get Started
-              </button>
-            </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {platformData.map((platform) => (
+            <PlatformGallery key={platform.name} platform={platform} />
           ))}
         </div>
       </div>
-
-      <PlanApplicationModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        selectedPlatform={selectedPlatform}
-      />
     </section>
   );
 }
