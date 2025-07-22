@@ -75,7 +75,7 @@ export default function PlatformServices() {
         '24/7 Customer Support',
         'Exclusive Deals & Discounts'
       ],
-      image: 'https://readdy.ai/api/search-image?query=Travel%20agency%20office%20with%20maps%20and%20laptops%20showing%20booking%20systems%20and%20travel%20packages&width=400&height=300&seq=travel-agency&orientation=landscape'
+      image: '/images/travel-agency.jpg'
     },
     {
       name: 'Salon Spa',
@@ -90,7 +90,7 @@ export default function PlatformServices() {
         'Product Sales & Promotions',
         'Professional Staff Training'
       ],
-      image: 'https://readdy.ai/api/search-image?query=Salon%20spa%20interior%20with%20massage%20beds%20and%20beauty%20products%20displayed%20in%20a%20modern%20setting&width=400&height=300&seq=salon-spa&orientation=landscape'
+      image: '/images/salon-spa.jpg'
     }
   ];
 
