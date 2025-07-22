@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 const platformData = [
   {
-    name: 'Facebook Commerce',
+    name: 'Facebook Shop',
     images: [
       '/images/facebook1.jpg',
       '/images/facebook2.jpg',
@@ -14,9 +14,9 @@ const platformData = [
       '/images/facebook6.jpg',
       '/images/facebook7.jpg',
     ],
-    description: 'Boost your sales with a comprehensive Facebook Shop setup and Instagram Shopping integration.',
+    description: 'Discover beauty essentials for both men and women—glow up starts here!',
     buttonLabel: 'Shop Now',
-    shopUrl: 'https://www.facebook.com/commerce',
+    shopUrl: 'https://www.facebook.com/CosmiBeautiiMain',
   },
   {
     name: 'TikTok Shop',
@@ -29,12 +29,12 @@ const platformData = [
       '/images/tiktok6.jpg',
       '/images/tiktok7.jpg',
     ],
-    description: 'Engage customers with live shopping events and influencer partnerships on TikTok.',
+    description: 'Specially curated beauty products for men—style meets skincare.',
     buttonLabel: 'Shop Now',
-    shopUrl: 'https://www.tiktok.com/shop',
+    shopUrl: 'https://www.tiktok.com/@cosmibeautiiofficial',
   },
   {
-    name: 'Lazada Solutions',
+    name: 'Lazada Shop',
     images: [
       '/images/lazada1.jpg',
       '/images/lazada2.jpg',
@@ -44,12 +44,12 @@ const platformData = [
       '/images/lazada6.jpg',
       '/images/lazada7.jpg',
     ],
-    description: 'Optimize your Lazada store with product photography and sponsored solutions.',
+    description: 'Wide range of products for every need—shop all categories with ease.',
     buttonLabel: 'Shop Now',
     shopUrl: 'https://www.lazada.com',
   },
   {
-    name: 'Shopee Management',
+    name: 'Shopee Shop',
     images: [
       '/images/shopee1.jpg',
       '/images/shopee2.jpg',
@@ -59,12 +59,12 @@ const platformData = [
       '/images/shopee6.jpg',
       '/images/shopee7.jpg',
     ],
-    description: 'Manage your Shopee store with product listing optimization and ad campaigns.',
+    description: 'One-stop shop for all categories—beauty, gadgets, home, and more!',
     buttonLabel: 'Shop Now',
     shopUrl: 'https://shopee.com',
   },
   {
-    name: 'Travel Agency',
+    name: 'PAJU Travel & Tour  Agency',
     images: [
       '/images/travel1.jpg',
       '/images/travel2.jpg',
@@ -74,12 +74,12 @@ const platformData = [
       '/images/travel6.jpg',
       '/images/travel7.jpg',
     ],
-    description: 'Book your dream vacation with our trusted travel agency services.',
+    description: 'Explore the world with PAJU—your gateway to unforgettable travel experiences.',
     buttonLabel: 'Book Now',
-    shopUrl: 'https://travelagency.example.com',
+    shopUrl: 'https://www.facebook.com/pajutravelandtours',
   },
   {
-    name: 'Salon Spa',
+    name: 'France Salon Spa',
     images: [
       '/images/salon1.jpg',
       '/images/salon2.jpg',
@@ -89,9 +89,9 @@ const platformData = [
       '/images/salon6.jpg',
       '/images/salon7.jpg',
     ],
-    description: 'Relax and rejuvenate with our premium salon and spa services.',
+    description: 'Pamper yourself with luxury hair and spa treatments—where beauty meets relaxation.',
     buttonLabel: 'Book Now',
-    shopUrl: 'https://salonspa.example.com',
+    shopUrl: 'https://www.facebook.com/profile.php?id=61565027070084',
   },
 ];
 
