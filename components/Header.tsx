@@ -47,8 +47,9 @@ export default function Header() {
     >
       <nav className="px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-white font-pacifico">
-            logo
+          <Link href="/" className="text-2xl font-bold text-white font-pacifico flex items-center">
+            <img src="/favicon.ico" alt="Logo" className="h-8 w-8 mr-2" />
+            WihiAsia
           </Link>
 
           <div className="hidden lg:flex items-center space-x-8">
