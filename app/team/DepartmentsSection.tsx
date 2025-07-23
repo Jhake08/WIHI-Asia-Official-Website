@@ -3,15 +3,6 @@
 export default function DepartmentsSection() {
   const departments = [
     {
-      name: 'Management',
-      memberCount: 15,
-      description: 'Leading strategic vision, operational excellence, and cross-department collaboration to drive ecommerce success.',
-      icon: 'ri-code-line',
-      color: 'from-blue-600 to-cyan-600',
-      image: '/images/management.jpg',
-      skills: ['Strategic Planning', 'Team Leadership', 'KPI Analysis', 'Budgeting', 'Process Optimization', 'Stakeholder Management', 'Risk Management']
-    },
-    {
       name: 'Facebook Department',
       memberCount: 12,
       description: 'Driving social commerce growth through engaging Facebook campaigns and seamless shopping experiences.',
@@ -55,6 +46,33 @@ export default function DepartmentsSection() {
       color: 'from-gray-600 to-gray-800',
       image: '/images/logistics.jpg',
       skills: ['Supply Chain Management', 'Last-Mile Delivery', 'Warehouse Management', 'Shipping Negotiation', 'Reverse Logistics', 'Real-Time Tracking']
+    },
+    {
+      name: 'I.T Department',
+      memberCount: 7,
+      description: 'Managing and maintaining IT infrastructure, ensuring seamless technology operations.',
+      icon: 'ri-computer-line',
+      color: 'from-indigo-600 to-blue-600',
+      image: '/images/it-department.jpg',
+      skills: ['Network Management', 'System Administration', 'Cybersecurity', 'Technical Support', 'Cloud Services']
+    },
+    {
+      name: 'PAJU Travel and Tour',
+      memberCount: 9,
+      description: 'Providing exceptional travel and tour services with personalized customer experiences.',
+      icon: 'ri-plane-line',
+      color: 'from-pink-500 to-red-500',
+      image: '/images/paju-travel.jpg',
+      skills: ['Travel Planning', 'Customer Service', 'Itinerary Management', 'Booking Coordination', 'Tour Guides']
+    },
+    {
+      name: 'France Salon and Spa',
+      memberCount: 6,
+      description: 'Offering premium salon and spa services with a focus on relaxation and wellness.',
+      icon: 'ri-scissors-line',
+      color: 'from-purple-600 to-pink-600',
+      image: '/images/france-salon.jpg',
+      skills: ['Hair Styling', 'Skin Care', 'Massage Therapy', 'Customer Care', 'Product Knowledge']
     }
   ];
 
@@ -70,7 +88,7 @@ export default function DepartmentsSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {departments.map((dept, index) => (
             <div
               key={index}
