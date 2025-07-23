@@ -35,7 +35,7 @@ export default function DepartmentsSection() {
       description: 'Optimizing Shopee storefronts and campaigns to maximize conversions and marketplace success.',
       icon: 'ri-bar-chart-line',
       color: 'from-orange-600 to-red-600',
-      image: '/images/shopee.jpg',
+      image: '/images/Nica Shopee.png',
       skills: ['Shopee Seller Center', 'Product SEO', 'Flash Sales', 'Shopee Live', 'Affiliate Marketing', 'Pricing Analysis', 'Order Fulfillment']
     },
     {
