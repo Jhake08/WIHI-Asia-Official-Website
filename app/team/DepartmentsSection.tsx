@@ -3,56 +3,56 @@
 export default function DepartmentsSection() {
   const departments = [
     {
-      name: 'Facebook Department',
-      role: 'Department',
+      name: 'Dorie Adriano',
+      role: 'Facebook Department Head',
       bio: 'Driving social commerce growth through engaging Facebook campaigns and seamless shopping experiences.',
       image: 'https://readdy.ai/api/search-image?query=Facebook%20team%20working%20together%20in%20office&width=300&height=400&orientation=portrait',
       expertise: ['Facebook Ads', 'Meta Business Suite', 'Audience Targeting', 'Social Media Analytics', 'Content Creation', 'Conversion Rate Optimization', 'A/B Testing'],
       social: {}
     },
     {
-      name: 'Tiktok Department',
-      role: 'Department',
+      name: 'Charlie Pañosa',
+      role: 'Tiktok Department Head',
       bio: 'Harnessing the power of viral content to boost ecommerce sales on TikTok’s dynamic platform.',
       image: 'https://readdy.ai/api/search-image?query=TikTok%20marketing%20team%20collaborating&width=300&height=400&orientation=portrait',
       expertise: ['TikTok Ads', 'Viral Content Strategy', 'Short-Form Video Editing', 'Influencer Collaboration', 'Hashtag Optimization', 'TikTok Shop', 'Live Commerce'],
       social: {}
     },
     {
-      name: 'Shopee Department',
-      role: 'Department',
+      name: 'Nica Arnonobal',
+      role: 'Shopee Department Head',
       bio: 'Optimizing Shopee storefronts and campaigns to maximize conversions and marketplace success.',
       image: 'https://readdy.ai/api/search-image?query=Shopee%20ecommerce%20team%20working&width=300&height=400&orientation=portrait',
       expertise: ['Shopee Seller Center', 'Product SEO', 'Flash Sales', 'Shopee Live', 'Affiliate Marketing', 'Pricing Analysis', 'Order Fulfillment'],
       social: {}
     },
     {
-      name: 'Lazada Department',
-      role: 'Department',
+      name: 'Crisha Raga',
+      role: 'Lazada Department Head',
       bio: 'Delivering high-performance Lazada store strategies to enhance visibility and sales.',
       image: 'https://readdy.ai/api/search-image?query=Lazada%20ecommerce%20team%20collaborating&width=300&height=400&orientation=portrait',
       expertise: ['Lazada Seller Hub', 'Sponsored Ads', 'LazMall', 'Cross-Border Logistics', 'Promotion Strategy', 'Lazada Live', 'ROI Tracking'],
       social: {}
     },
     {
-      name: 'Distributorship Department',
-      role: 'Department',
+      name: 'Elsa Domingo',
+      role: 'Distributorship Department Head',
       bio: 'Managing distribution channels to ensure product availability and market penetration.',
       image: 'https://readdy.ai/api/search-image?query=Distribution%20team%20working%20together&width=300&height=400&orientation=portrait',
       expertise: ['Channel Management', 'Inventory Control', 'Sales Strategy', 'Partner Relations', 'Logistics Coordination'],
       social: {}
     },
     {
-      name: 'PAJU Travel & Tour Department',
-      role: 'Department',
+      name: 'Rodel ',
+      role: 'PAJU Travel & Tour Department Head',
       bio: 'Providing travel and tour services with exceptional customer experience and operational efficiency.',
       image: 'https://readdy.ai/api/search-image?query=Travel%20and%20tour%20team%20planning&width=300&height=400&orientation=portrait',
       expertise: ['Tour Planning', 'Customer Service', 'Vendor Management', 'Marketing', 'Event Coordination'],
       social: {}
     },
     {
-      name: 'Logistic Department',
-      role: 'Department',
+      name: 'Jhang Francisco',
+      role: 'Logistic Department Head',
       bio: 'Ensuring fast, reliable, and cost-effective delivery solutions for a seamless customer experience.',
       image: 'https://readdy.ai/api/search-image?query=Logistics%20team%20managing%20shipments&width=300&height=400&orientation=portrait',
       expertise: ['Supply Chain Management', 'Last-Mile Delivery', 'Warehouse Management', 'Shipping Negotiation', 'Reverse Logistics', 'Real-Time Tracking'],
