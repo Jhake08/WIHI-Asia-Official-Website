@@ -156,13 +156,16 @@ export default function Home() {
       <section className="py-20 px-6 bg-gradient-to-r from-blue-900/20 to-purple-900/20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to <span className="text-blue-400">Scale</span> Your Business?
+            Your Shipments, On Time & Secure
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Join hundreds of successful brands that trust us to amplify their presence across all major platforms.
+            Join thousands of satisfied customers who rely on our tracked, worry-free deliveries. Every parcel handled with care.
           </p>
-          <Link href="/contact" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-5 rounded-full text-xl font-semibold hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
-            Get Started Today
+          <div className="mb-8 text-white text-lg font-semibold">
+            [Gallery of Parcel Deliveries]
+          </div>
+          <Link href="/gallery" className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-5 rounded-full text-xl font-semibold hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
+            Trust Your Shipments to Us
           </Link>
         </div>
       </section>
