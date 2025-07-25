@@ -21,7 +21,7 @@ export default function TeamGrid() {
       department: 'Executive Management ',
       bio: 'Tech innovator specializing in ecommerce platforms and automation solutions.',
       image: 'https://readdy.ai/api/search-image?query=Professional%20male%20CTO%20portrait%20in%20tech%20office%20environment%2C%20confident%20technology%20leader%20wearing%20casual%20business%20attire%2C%20modern%20corporate%20headshot%20with%20clean%20lighting%2C%20innovation%20and%20technical%20expertise%20atmosphere&width=300&height=400&seq=cto-michael&orientation=portrait',
-      expertise: ['Operational Excellence', 'Process Optimization', 'Team Execution],
+      expertise: ['Operational Excellence', 'Process Optimization', 'Team Execution'],
       social: {
         linkedin: '#',
         github: '#'
