@@ -33,9 +33,7 @@ export default function Home() {
             <Link href="/contact" className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
               Start Your Journey
             </Link>
-            <Link href="/portfolio" className="border border-gray-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition-all duration-300 whitespace-nowrap cursor-pointer">
-              View Our Work
-            </Link>
+          {/* Removed portfolio link as per user request */}
           </div>
         </div>
 
