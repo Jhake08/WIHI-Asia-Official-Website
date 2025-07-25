@@ -6,10 +6,10 @@ export default function TeamGrid() {
     {
       name: 'Jellete Juian',
       role: 'COO & Founder',
-      department: 'Management',
+      department: 'Operations Division',
       bio: 'Visionary leader with 12+ years in ecommerce. Former VP at major tech company.',
       image: 'https://readdy.ai/api/search-image?query=Professional%20female%20CEO%20portrait%20in%20modern%20corporate%20office%2C%20confident%20business%20leader%20wearing%20elegant%20business%20attire%2C%20contemporary%20executive%20headshot%20with%20clean%20lighting%20and%20professional%20background%2C%20leadership%20and%20success%20atmosphere&width=300&height=400&seq=ceo-sarah&orientation=portrait',
-      expertise: ['Strategic Planning', 'Business Development', 'Team Leadership'],
+      expertise: ['Strategic Vision', 'Executive Leadership', 'Business Growth'],
       social: {
         linkedin: '#',
         twitter: '#'
@@ -18,58 +18,70 @@ export default function TeamGrid() {
     {
       name: 'Jan Lester Juilian',
       role: 'CEO & Founder',
-      department: 'Management',
+      department: 'Executive Management ',
       bio: 'Tech innovator specializing in ecommerce platforms and automation solutions.',
       image: 'https://readdy.ai/api/search-image?query=Professional%20male%20CTO%20portrait%20in%20tech%20office%20environment%2C%20confident%20technology%20leader%20wearing%20casual%20business%20attire%2C%20modern%20corporate%20headshot%20with%20clean%20lighting%2C%20innovation%20and%20technical%20expertise%20atmosphere&width=300&height=400&seq=cto-michael&orientation=portrait',
-      expertise: ['Platform Development', 'System Architecture', 'API Integration'],
+      expertise: ['Operational Excellence', 'Process Optimization', 'Team Execution],
       social: {
         linkedin: '#',
         github: '#'
       }
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Head of Marketing',
-      department: 'Marketing',
+      name: 'Jobelle Ortega',
+      role: 'Administrative Executive',
+      department: 'Executive Office ',
       bio: 'Digital marketing expert with proven track record in social commerce growth.',
       image: 'https://readdy.ai/api/search-image?query=Professional%20female%20marketing%20director%20portrait%20in%20creative%20office%20space%2C%20confident%20marketing%20leader%20wearing%20stylish%20business%20attire%2C%20contemporary%20corporate%20headshot%20with%20vibrant%20lighting%2C%20creativity%20and%20strategy%20atmosphere&width=300&height=400&seq=marketing-emily&orientation=portrait',
-      expertise: ['Social Media Marketing', 'Growth Hacking', 'Brand Strategy'],
+      expertise: ['Schedule Management', 'Executive Coordination', 'Document Control'],
       social: {
         linkedin: '#',
         instagram: '#'
       }
     },
     {
-      name: 'David Thompson',
-      role: 'Lead Developer',
-      department: 'Engineering',
+      name: 'Elsa Domingo',
+      role: 'Operations Manager',
+      department: ' Operations Department',
       bio: 'Full-stack developer passionate about creating seamless ecommerce experiences.',
       image: 'https://readdy.ai/api/search-image?query=Professional%20male%20lead%20developer%20portrait%20in%20modern%20tech%20workspace%2C%20confident%20software%20engineer%20wearing%20casual%20professional%20attire%2C%20contemporary%20office%20headshot%20with%20clean%20lighting%2C%20coding%20and%20innovation%20atmosphere&width=300&height=400&seq=dev-david&orientation=portrait',
-      expertise: ['React Development', 'Node.js', 'Database Design'],
+      expertise: ['Workflow Optimization', 'Team Supervision', 'Logistics Management'],
       social: {
         linkedin: '#',
         github: '#'
       }
     },
     {
-      name: 'Lisa Wang',
-      role: 'UX/UI Designer',
-      department: 'Design',
+      name: 'Via',
+      role: 'Human Resources Officer',
+      department: 'Human Resources Department',
       bio: 'Creative designer focused on user-centered ecommerce interface design.',
       image: 'https://readdy.ai/api/search-image?query=Professional%20female%20UX%20designer%20portrait%20in%20creative%20design%20studio%2C%20confident%20designer%20wearing%20modern%20casual%20attire%2C%20contemporary%20workspace%20headshot%20with%20artistic%20lighting%2C%20creativity%20and%20user%20experience%20atmosphere&width=300&height=400&seq=designer-lisa&orientation=portrait',
-      expertise: ['User Experience', 'Interface Design', 'Prototyping'],
+      expertise: ['Talent Acquisition', 'Employee Engagement', 'Policy Compliance'],
       social: {
         linkedin: '#',
         dribbble: '#'
       }
     },
     {
-      name: 'James Wilson',
-      role: 'Data Analyst',
-      department: 'Analytics',
+      name: 'Claudine De Guzman',
+      role: 'Finance Officer',
+      department: 'Finance Department ',
       bio: 'Data scientist turning ecommerce metrics into actionable growth strategies.',
       image: 'https://readdy.ai/api/search-image?query=Professional%20male%20data%20analyst%20portrait%20in%20modern%20office%20with%20analytics%20displays%2C%20confident%20data%20scientist%20wearing%20business%20casual%20attire%2C%20contemporary%20workspace%20headshot%20with%20clean%20lighting%2C%20data%20and%20insights%20atmosphere&width=300&height=400&seq=analyst-james&orientation=portrait',
-      expertise: ['Data Analysis', 'Business Intelligence', 'Performance Metrics'],
+      expertise: ['Financial Reporting', 'Regulatory Compliance', 'Budget Forecasting'],
+      social: {
+        linkedin: '#',
+        twitter: '#'
+      }
+    },
+    {
+      name: 'I.T Officer',
+      role: 'Information Technology',
+      department: ' Information Technology Department',
+      bio: 'Expert in managing IT infrastructure, cybersecurity, and technical support.',
+      image: 'https://readdy.ai/api/search-image?query=IT%20professional%20working%20on%20computer&width=300&height=400&orientation=portrait',
+      expertise: ['Network Management', 'Cybersecurity', 'Technical Support', 'System Administration'],
       social: {
         linkedin: '#',
         twitter: '#'
@@ -89,7 +101,7 @@ export default function TeamGrid() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <div
               key={index}
